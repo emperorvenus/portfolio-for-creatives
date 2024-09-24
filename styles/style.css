@@ -32,7 +32,7 @@ Imported stylesheets. Remove the ones you do not want to use.
 @import url("make-something-fly.css");
 @import url("animated-gradient.css");
 @import url("text-stroke.css");
-@import url("stroke-shadow.css");
+
 @import url("experiments.css");
 @import url("style-guide.css");
 @import url("scroll-to-top.css");
@@ -80,7 +80,7 @@ html {
 /* TODO: Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-typeface: "Inter", sans-serif;
+  --body-typeface: "Cabin", sans-serif;
   --heading-typeface: "Cabin", sans-serif;
   --project-title-typeface: "Cabin", sans-serif;
   --background-color: #fdfdfd;
@@ -88,7 +88,7 @@ html {
   --background-color-footer: #f5f5f5;
   --alt-background-color: #000000;
   --background-color-holding-page: rgba(82, 0, 255, 0.6);
-  --h1-color: #5200ff;
+  --h1-color: #EDF1F4;
   --h2-color: #5200ff;
   --h3-color: #5200ff;
   --h4-color: #5200ff;

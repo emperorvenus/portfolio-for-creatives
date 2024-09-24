@@ -1,5 +1,5 @@
 :root {
-    --gradient: linear-gradient(-45deg,#F2A241,  #F1BE75, #EDF1F4 , #D8EAE9,#68B6AD );
+    --gradient: linear-gradient(-45deg,#F2A241,  #F1BE75, #D8EAE9,#68B6AD );
 }
 
 .gradient-animation {
