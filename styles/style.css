@@ -96,10 +96,10 @@ html {
   --h6-color: #5200ff;
   --primary-text-color: #222;
   --holding-page-title-color: #ebedf0;
-  --accent-color: #5200ff;
-  --overlay-color: #5200ff;
-  --overlay-title-color: #ffffff;
-  --overlay-description-color: #ffffff;
+  --accent-color: #F2A241;
+  --overlay-color: #F2A241;
+  --overlay-title-color: #000000;
+  --overlay-description-color: #000000;
   --hyperlink-color: #5200ff;
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
