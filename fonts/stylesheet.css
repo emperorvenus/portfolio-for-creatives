@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Amiamie Amiamie';
+    src: url('Amiamie-LightItalic.eot');
+    src: url('Amiamie-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Amiamie-LightItalic.woff2') format('woff2'),
+        url('Amiamie-LightItalic.woff') format('woff'),
+        url('Amiamie-LightItalic.ttf') format('truetype'),
+        url('Amiamie-LightItalic.svg#Amiamie-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Amiamie Amiamie';
+    src: url('Amiamie-Black.eot');
+    src: url('Amiamie-Black.eot?#iefix') format('embedded-opentype'),
+        url('Amiamie-Black.woff2') format('woff2'),
+        url('Amiamie-Black.woff') format('woff'),
+        url('Amiamie-Black.ttf') format('truetype'),
+        url('Amiamie-Black.svg#Amiamie-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

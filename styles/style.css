@@ -9,11 +9,34 @@
 */
 
 /* TODO: Delete the Google Fonts below and add the Google Fonts you want to use on your site. Each Google font that you load will slightly increase the download speed of your site so make sure to only included necessary fonts here. */
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab|Staatliches&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+
+@font-face {
+  font-family: "Amiamie Amiamie";
+  src: url("../fonts/Amiamie-LightItalic.eot");
+  src: url("../fonts/Amiamie-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Amiamie-LightItalic.woff2") format("woff2"),
+    url("../fonts/Amiamie-LightItalic.woff") format("woff"),
+    url("../fonts/Amiamie-LightItalic.ttf") format("truetype"),
+    url("../fonts/Amiamie-LightItalic.svg#Amiamie-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amiamie Black";
+  src: url("../fonts/Amiamie-Black.eot");
+  src: url("../fonts/Amiamie-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Amiamie-Black.woff2") format("woff2"),
+    url("../fonts/Amiamie-Black.woff") format("woff"),
+    url("../fonts/Amiamie-Black.ttf") format("truetype"),
+    url("../fonts/Amiamie-Black.svg#Amiamie-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 /*
 
@@ -81,14 +104,14 @@ html {
 
 :root {
   --body-typeface: "Cabin", sans-serif;
-  --heading-typeface: "Cabin", sans-serif;
-  --project-title-typeface: "Cabin", sans-serif;
+  --heading-typeface: "Amiamie Black";
+  --project-title-typeface: "Amiamie Amiamie";
   --background-color: #fdfdfd;
   --background-color-about: #f5f5f5;
   --background-color-footer: #f5f5f5;
   --alt-background-color: #000000;
   --background-color-holding-page: rgba(82, 0, 255, 0.6);
-  --h1-color: #EDF1F4;
+  --h1-color: #edf1f4;
   --h2-color: #5200ff;
   --h3-color: #5200ff;
   --h4-color: #5200ff;
@@ -96,8 +119,8 @@ html {
   --h6-color: #5200ff;
   --primary-text-color: #222;
   --holding-page-title-color: #ebedf0;
-  --accent-color: #F2A241;
-  --overlay-color: #F2A241;
+  --accent-color: #f2a241;
+  --overlay-color: #f2a241;
   --overlay-title-color: #000000;
   --overlay-description-color: #000000;
   --hyperlink-color: #5200ff;
@@ -315,6 +338,17 @@ a:active {
                                  
 */
 
+/* Sidebar */
+.nav-aside {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--project-sidebar-text-color);
+  background: var(--project-sidebar-background-color);
+}
+
 .hero {
   min-height: 80vh;
   display: flex;
@@ -323,17 +357,40 @@ a:active {
 
 .branding-navigation {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem;
-  align-items: flex-start;
+  flex-direction: column;
+  padding: 0.5rem;
 }
 
 .logo {
-  width: 3rem;
-  /* TODO: Adjust the width of the logo on mobile devices here. */
+  width: 10%;
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
+.menu-wrapper {
+  padding: 0.5rem;
+}
+
+.menu {
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-item {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+.custom-navigation {
+  font-size: 1rem;
+}
+
+.hero-header {
+  height: 15vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 .hero-headline-wrapper {
   display: flex;
   flex-direction: column;
@@ -342,7 +399,7 @@ a:active {
   justify-content: center;
   padding: 2rem 4rem;
   text-align: center;
-} 
+}
 
 .hero-icon {
   font-size: 4rem;
@@ -433,32 +490,13 @@ a:active {
 */
 
 .about {
-  display: grid;
+  display: flex;
+  justify-content: flex-end;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
   background: var(--background-color-about);
   padding: 1rem;
-  flex: 1;
-}
-
-.about-item-1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.about-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.about-item-3 {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-
-.about-item-4 {
-  grid-column: 1 / 2;
-  grid-row: 4 / 5;
+  flex: 3;
 }
 
 /* Global Footer
@@ -475,7 +513,7 @@ a:active {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  min-height: 100vh;
+  min-height: 20vh;
   background: var(--background-color-footer);
   padding: 1rem;
 }
@@ -484,24 +522,9 @@ a:active {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
-
-.footer-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.footer-item-3 {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-
 .footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
-}
-
-.awards-list {
-  margin-bottom: 2rem;
 }
 
 /* Project Page 
@@ -606,7 +629,12 @@ a:active {
   width: 100%;
   min-height: 100vh;
   /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), var(--background-color-holding-page)), url(/assets/temp/noise.svg);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1),
+      var(--background-color-holding-page)
+    ),
+    url(/assets/temp/noise.svg);
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
@@ -704,7 +732,7 @@ a:active {
   }
 
   .logo {
-    width: 20rem;
+    width: 11rem;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
@@ -797,8 +825,8 @@ a:active {
   }
 
   /* Sidebar on Large Devices */
-  .project-aside {
-    width: 35%;
+  .nav-aside {
+    width: 20%;
     height: 65vh;
     position: -webkit-sticky;
     position: sticky;
@@ -808,7 +836,7 @@ a:active {
 
   /* Main Project Image Area on Large Devices */
   .project-details {
-    width: 65%;
+    width: 80%;
   }
 
   .project-image {
