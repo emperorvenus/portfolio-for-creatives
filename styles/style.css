@@ -129,7 +129,7 @@ html {
   --hyperlink-alternate-color: orangered;
   --hover-color: #ffffff;
   --visited-color: #ffffff;
-  --project-title-color: #565656;
+  --project-title-color: #ffffff;
   --nav-sidebar-background-color: rgb(0, 0, 0);
   --nav-sidebar-text-color: white;
   --heart-color: darkred;
@@ -219,7 +219,8 @@ h6 {
 }
 
 p {
-  font-size: 1rem;
+  font-family: var(--body-typeface);
+  font-size: 1.2rem;
   line-height: 1.3;
   margin-bottom: 1rem;
 }
@@ -255,6 +256,15 @@ em {
   font-family: var(--heading-typeface);
   color: var(--project-title-color);
   margin-bottom: 1rem;
+}
+
+.project-info {
+  margin-top: 1rem;
+  padding-right: 2rem;
+}
+
+.project-secondimg {
+  align-items: right;
 }
 
 .overlay-title {
@@ -628,11 +638,6 @@ a:active {
   justify-content: center;
 }
 
-.large-emoji-placeholder {
-  font-size: 12rem;
-  /* TODO: Delete this rule. It is only used for making the placeholder emojis large for demo purposes only. */
-}
-
 .text-section {
   width: 100%;
 }
@@ -646,15 +651,10 @@ a:active {
 /* Main Project Image Area */
 
 .project-details {
+  display: flex;
   width: 100%;
   padding: 1rem;
   /* TODO: Delete background-image and the three linear gradient colors to remove the gradient background on the project page. Be careful not to delete the closing } */
-  background-image: linear-gradient(
-    -225deg,
-    var(--linear-gradient-color-1) 0%,
-    var(--linear-gradient-color-2) 50%,
-    var(--linear-gradient-color-3) 100%
-  );
 }
 
 /* 
@@ -872,9 +872,10 @@ a:active {
   }
 
   /* Padding around work grid and project page */
-  .portfolio,
-  .project-wrapper {
-  }
+
+  /* .portfolio,
+project-wrapper {
+  } */
 
   /* Project Page Flex Direction on Large Devices */
   .project-wrapper {
@@ -918,11 +919,6 @@ a:active {
 
   .project-image-container {
     flex-direction: row;
-
-    width: 100%;
-    height: auto;
-    position: relative;
-    border-radius: 30px;
   }
 
   .project-navigation {
