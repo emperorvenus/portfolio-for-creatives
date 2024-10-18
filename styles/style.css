@@ -179,49 +179,37 @@ svg {
 
 h1 {
   font-size: 2rem;
-  font-family: var(--heading-typeface);
   margin-bottom: 1rem;
-  color: var(--h1-color);
 }
 
 h2 {
   font-size: 2.25rem;
-  font-family: var(--heading-typeface);
   margin-bottom: 1rem;
-  color: var(--h2-color);
 }
 
 h3 {
   font-size: 1.325rem;
   margin-bottom: 1rem;
-  line-height: 1.3;
-  color: var(--h3-color);
 }
 
 h4 {
-  font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: var(--h4-color);
 }
 
 h5 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: var(--h5-color);
-  font-family: var(--project-title-typeface);
 }
 
 h6 {
   font-size: 1rem;
   margin-bottom: 1rem;
-  color: var(--h6-color);
 }
 
 p {
-  font-family: var(--body-typeface);
-  font-size: 1.2rem;
-  line-height: 1.3;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -557,12 +545,17 @@ a:active {
 */
 
 .footer-divider {
-  background: var(--footer-background);
+  background: url(/assets/footer-wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-image {
-  height: 10vh;
-  width: auto;
+  min-width: 100vh;
 }
 
 .global-footer {
@@ -651,9 +644,9 @@ a:active {
 /* Main Project Image Area */
 
 .project-details {
-  display: flex;
   width: 100%;
   padding: 1rem;
+
   /* TODO: Delete background-image and the three linear gradient colors to remove the gradient background on the project page. Be careful not to delete the closing } */
 }
 
@@ -767,15 +760,51 @@ a:active {
   }
 
   h1 {
-    font-size: 4.275rem;
+    font-size: 4rem;
+    font-family: var(--heading-typeface);
+    margin-bottom: 1rem;
+    color: var(--h1-color);
   }
 
   h2 {
     font-size: 2.25rem;
+    font-family: var(--heading-typeface);
+    margin-bottom: 1rem;
+    color: var(--h2-color);
   }
 
   h3 {
-    font-size: 1.625rem;
+    font-size: 1.325rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+    color: var(--h3-color);
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--h4-color);
+  }
+
+  h5 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--h5-color);
+    font-family: var(--project-title-typeface);
+  }
+
+  h6 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--h6-color);
+  }
+
+  p {
+    font-family: var(--body-typeface);
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
   }
 
   .logo {
@@ -909,7 +938,7 @@ project-wrapper {
 
   /* Main Project Image Area on Large Devices */
   .project-details {
-    width: 80%;
+    width: 100%;
   }
 
   .project-image {
@@ -948,4 +977,21 @@ project-wrapper {
   .grid {
     grid-template-columns: repeat(2, minmax(auto, 1fr));
   }
+
+  .project-details {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-secondimg {
+    flex-grow: 2;
+    flex-shrink: 0.5;
+  }
 }
+
+.footer-image {
+  height: 10vh;
+  width: auto;
+}
+
+/*
