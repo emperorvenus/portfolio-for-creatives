@@ -329,7 +329,6 @@ a:active {
 }
 
 .social-item {
-  line-height: 1.3;
   color: #f2a241;
 }
 
@@ -368,13 +367,7 @@ a:active {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
-  background: rgb(255, 175, 0);
-  background: linear-gradient(
-    86deg,
-    rgba(255, 175, 0, 1) 0%,
-    rgba(235, 235, 255, 1) 50%,
-    rgba(143, 190, 219, 1) 100%
-  );
+  background: #000000;
   align-items: center;
   justify-content: center;
   padding: 4em;
@@ -471,21 +464,16 @@ a:active {
   width: 100%;
 }
 
-/* Defining the work page grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: 400px 400px 400px 400px;
-  grid-gap: 1rem;
-  /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
+.image-grid {
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 5px; /* Space between images */
+  margin-right: 0rem;
+  margin-left: 0rem;
 }
 
-.work-page-grid-item {
-  width: 100%;
-  height: auto;
-  position: relative;
-  border-radius: 30px;
-  /* Required to contain overlay size */
+.project-image-grid {
+  display: flex;
+  justify-content: center;
 }
 
 /* Overlay */
@@ -545,7 +533,8 @@ a:active {
 */
 
 .footer-divider {
-  background: url(/assets/footer-wave.svg);
+  background-image: url(/assets/footer-wave.svg);
+  background-color: #f2a241;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 20vh;
@@ -562,7 +551,7 @@ a:active {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  min-height: 20vh;
+  min-height: 10vh;
   background: var(--footer-background);
   padding: 1rem;
   color: #f2a241;
@@ -610,25 +599,9 @@ a:active {
   padding: 0;
 }
 
-.project-image-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  position: relative;
-  border-radius: 30px;
-}
-
 .project-image {
-  border-radius: 30px;
-  width: 100%;
-  min-height: 50vh;
-  /* TODO: Delete min-height if you want to remove space between project images on project pages on mobile devices. It is used for the demo page only. */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%; /* Full width of the grid cell */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .text-section {
@@ -802,7 +775,7 @@ a:active {
 
   p {
     font-family: var(--body-typeface);
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.3;
     margin-bottom: 1rem;
   }
@@ -941,15 +914,6 @@ project-wrapper {
     width: 100%;
   }
 
-  .project-image {
-    min-height: 70vh;
-    /* TODO: Delete min-height if you want to remove space between project images on project pages on large devices. It is used for the demo page only. */
-  }
-
-  .project-image-container {
-    flex-direction: row;
-  }
-
   .project-navigation {
     justify-content: flex-start;
   }
@@ -994,4 +958,51 @@ project-wrapper {
   width: auto;
 }
 
-/*
+.project-image-grid {
+  display: flex;
+  justify-content: center;
+  background: #f2a241;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 10px; /* Space between images */
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.project-image {
+  width: 100%; /* Full width of the grid cell */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners */
+  transition: 0.5s ease;
+}
+
+.project-image:hover {
+  box-shadow: 1px 1px #f2a241, 2px 2px #f2a241, 3px 3px #f2a241, 4px 4px #f2a241,
+    5px 5px #f2a241, 6px 6px #f2a241;
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  transition: 0.5s ease;
+}
+
+.socials-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-content: center;
+}
+
+.socials-list li {
+  margin: 10px 8px;
+}
+
+.socials-list img {
+  max-width: 100%;
+  height: 5vh;
+  display: block;
+}
