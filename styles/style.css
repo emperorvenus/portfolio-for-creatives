@@ -543,6 +543,17 @@ a:active {
   justify-content: center;
 }
 
+.footer-divider-proj {
+  background-image: url(/assets/footer-wave.svg);
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
 .footer-image {
   min-width: 100vh;
 }
@@ -824,6 +835,11 @@ a:active {
     height: auto;
   }
 
+  .footer-divider-proj {
+    width: 100%;
+    height: auto;
+  }
+
   .global-footer {
     padding: 4rem 4rem 0 4rem;
     grid-template-columns: 1fr 1fr 1fr;
@@ -980,8 +996,8 @@ project-wrapper {
 }
 
 .project-image:hover {
-  box-shadow: 1px 1px #f2a241, 2px 2px #f2a241, 3px 3px #f2a241, 4px 4px #f2a241,
-    5px 5px #f2a241, 6px 6px #f2a241;
+  box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000, 4px 4px #000000,
+    5px 5px #000000, 6px 6px #000000;
   -webkit-transform: translateX(-3px);
   transform: translateX(-3px);
   transition: 0.5s ease;
