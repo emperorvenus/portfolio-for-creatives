@@ -364,13 +364,9 @@ a:active {
 }
 
 .hero {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  background: #000000;
-  align-items: center;
-  justify-content: center;
-  padding: 4em;
+  min-height: 20vh;
+  padding: 4rem;
+  margin-top: 0;
 }
 
 .branding-navigation {
@@ -400,22 +396,6 @@ a:active {
 .menu-item {
   padding: 0.5rem;
   margin: 0.5rem;
-}
-
-.hero-header {
-  height: 15vh;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-.hero-headline-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 4rem;
-  text-align: center;
 }
 
 .hero-icon {
@@ -796,10 +776,6 @@ a:active {
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
-  .hero {
-    min-height: 80vh;
-  }
-
   .hero-headline-wrapper {
     padding: 4rem 8rem;
   }
@@ -1021,4 +997,16 @@ project-wrapper {
   max-width: 100%;
   height: 5vh;
   display: block;
+}
+
+.hero {
+  background-image: url(/assets/blk-to-yellow-wave.svg);
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 20vh;
+  background-position: bottom;
+  display: flex;
+  margin-top: 20vh;
+  min-height: 90vh;
 }
