@@ -118,11 +118,11 @@ html {
   --h4-color: #ffffff;
   --h5-color: #ffffff;
   --h6-color: #ffffff;
-  --footer-text: #f2a241;
+  --footer-text: #ec9007;
   --primary-text-color: #ffffff;
   --holding-page-title-color: #ebedf0;
-  --accent-color: #f2a241;
-  --overlay-color: #f2a241;
+  --accent-color: #ec9007;
+  --overlay-color: #ec9007;
   --overlay-title-color: #000000;
   --overlay-description-color: #000000;
   --hyperlink-color: #5200ff;
@@ -139,6 +139,8 @@ html {
   --linear-gradient-color-2: #8d0b93;
   --linear-gradient-color-3: #321575;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
+  --venus-blue: #dbe9e9;
+  --emperor-gold: #ec9007;
 }
 
 body {
@@ -221,10 +223,6 @@ em {
   font-size: 0.875rem;
 }
 
-.hero-headline {
-  color: var(--overlay-color);
-}
-
 .brand-title {
   font-size: 1.7rem;
   font-family: var(--heading-typeface);
@@ -267,16 +265,11 @@ em {
 /* Hyperlink Styles */
 
 a:link {
-  color: var(--hyperlink-color);
   text-decoration: none;
 }
 
 a:visited {
   color: var(--visited-color);
-}
-
-a:hover {
-  color: var(--hover-color);
 }
 
 a:focus {
@@ -286,6 +279,11 @@ a:focus {
 a:active {
   color: var(--hover-color);
   /* Tap on mobile */
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--emperor-gold);
 }
 
 .navigation-arrow {
@@ -329,7 +327,7 @@ a:active {
 }
 
 .social-item {
-  color: #f2a241;
+  color: var(--venus-blue);
 }
 
 .list-item {
@@ -364,9 +362,10 @@ a:active {
 }
 
 .hero {
+  display: flex;
   min-height: 20vh;
   padding: 4rem;
-  margin-top: 0;
+  align-items: center;
 }
 
 .branding-navigation {
@@ -472,7 +471,7 @@ a:active {
   align-items: center;
   flex-direction: column;
   padding: 1em;
-  background-color: var(--overlay-color);
+  background-color: var(--venus-blue);
   transition: opacity 0.3s, visibility 0.3s;
 }
 
@@ -514,7 +513,7 @@ a:active {
 
 .footer-divider {
   background-image: url(/assets/footer-wave.svg);
-  background-color: #f2a241;
+  background-color: var(--venus-blue);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 20vh;
@@ -543,9 +542,8 @@ a:active {
   grid-template-columns: 1fr;
   grid-gap: 3rem;
   min-height: 10vh;
-  background: var(--footer-background);
+  background: var(--emperor-gold);
   padding: 1rem;
-  color: #f2a241;
 }
 
 .footer-type {
@@ -555,7 +553,7 @@ a:active {
 .footer-item-1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  color: #f2a241;
+  color: var(--venus-blue);
 }
 .footer-item-4 {
   grid-column: 1 / 2;
@@ -953,7 +951,7 @@ project-wrapper {
 .project-image-grid {
   display: flex;
   justify-content: center;
-  background: #f2a241;
+  background: var(--venus-blue);
 }
 
 .image-grid {
@@ -1004,9 +1002,19 @@ project-wrapper {
   background-color: #000;
   background-repeat: no-repeat;
   background-size: contain;
-  padding-top: 20vh;
   background-position: bottom;
   display: flex;
-  margin-top: 20vh;
-  min-height: 90vh;
+  justify-content: space-evenly;
+  padding-bottom: 8rem;
+}
+
+.creature-gif {
+  height: auto;
+  width: 35vw;
+  position: relative;
+}
+.hero-text {
+  max-width: 30vw;
+  height: auto;
+  align-self: center;
 }
