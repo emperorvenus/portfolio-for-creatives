@@ -495,7 +495,6 @@ a:hover {
   display: grid;
   grid-gap: 3rem;
   padding: 3rem;
-  align-items: center;
 }
 
 /* Global Footer
@@ -1039,14 +1038,20 @@ project-wrapper {
 }
 
 .about-subhead {
-  padding-top: 3rem;
+  padding-top: 1.5rem;
 }
 
 .award-head {
-  padding-top: 3rem;
+  padding-top: 1.5rem;
 }
 
 .color-word {
   color: var(--emperor-gold);
+  font-style: italic;
+}
+
+.hero-strike {
+  color: var(--emperor-gold);
+  font-family: cabin;
   font-style: italic;
 }
