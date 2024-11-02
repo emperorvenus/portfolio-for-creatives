@@ -78,7 +78,7 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("../assets/star-shadow.png"), auto !important;
+  cursor: url("../assets/star-cursor.png"), auto !important;
   /* TODO: Change the url above to add a custom cursor. Delete the line above if you want to use the default browser cursor. */
 }
 
@@ -240,13 +240,25 @@ em {
   margin-bottom: 1rem;
 }
 
+.project-title-2 {
+  color: #494949;
+  margin-bottom: 1rem;
+}
+
 .project-info {
   margin-top: 1rem;
   padding-right: 2rem;
 }
 
+.project-info-2 {
+  margin-top: 1rem;
+  padding-right: 2rem;
+  color: #494949;
+}
+
 .project-secondimg {
   align-items: right;
+  max-width: 50vw;
 }
 
 .overlay-title {
@@ -262,6 +274,7 @@ em {
 
 a:link {
   text-decoration: none;
+  color: #ffffff;
 }
 
 a:visited {
@@ -275,7 +288,8 @@ a:active {
 
 a:hover {
   text-decoration: none;
-  color: var(--emperor-gold);
+  color: var(--venus-blue);
+  cursor: url(/assets/hover-star-cursor.png),auto;
 }
 
 .navigation-arrow {
@@ -329,9 +343,7 @@ a:hover {
 }
 
 .project-description {
-  font-size: 1.225rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
+  padding-top: 2rem;
 }
 
 /* Hero 
@@ -367,6 +379,8 @@ a:hover {
   flex-direction: column;
   justify-content: center;
 }
+
+
 .star {
   padding-bottom: 1rem;
 }
@@ -439,14 +453,12 @@ a:hover {
 }
 
 .image-grid {
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 5px; /* Space between images */
+  display: flex;
   margin-right: 0rem;
   margin-left: 0rem;
 }
 
 .project-image-grid {
-  display: flex;
   justify-content: center;
 }
 
@@ -468,12 +480,6 @@ a:hover {
   padding: 1em;
   background-color: var(--venus-blue);
   transition: opacity 0.3s, visibility 0.3s;
-}
-
-.work-page-grid-item:hover .overlay {
-  visibility: visible;
-  opacity: 0.8;
-  border-radius: 30px;
 }
 
 /* 
@@ -673,7 +679,10 @@ a:hover {
 */
 
 /* TODO: Customize your 404 Error Page */
-
+.error {
+ align-content: center;
+  }
+}
 /* The best 404 pages have become an art in themselves. Your 404 error page is an opportunity to make a memorable impression on your visitors when they don’t land exactly where they hoped. */
 
 /*
@@ -727,7 +736,6 @@ a:hover {
     font-size: 4rem;
     font-family: var(--heading-typeface);
     margin-bottom: 1rem;
-    color: var(--h1-color);
   }
 
   h2 {
@@ -755,7 +763,6 @@ a:hover {
   h5 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
-    color: var(--h5-color);
     font-family: var(--project-title-typeface);
   }
 
@@ -943,6 +950,7 @@ project-wrapper {
   .project-details {
     display: flex;
     justify-content: space-between;
+    padding-left: 3rem;
   }
 
   .project-secondimg {
@@ -962,32 +970,30 @@ project-wrapper {
 }
 
 .project-image-grid {
-  display: flex;
   justify-content: center;
   background: var(--venus-blue);
 }
 
 .image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 10px; /* Space between images */
-  margin-right: 1rem;
-  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding-top: 3rem;
 }
 
 .project-image {
   width: 100%; /* Full width of the grid cell */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Rounded corners */
-  transition: 0.5s ease;
+  border-radius: 30px;
+  transition: 1s ease;
 }
 
+
 .project-image:hover {
-  box-shadow: 1px 1px #000000, 2px 2px #000000, 3px 3px #000000, 4px 4px #000000,
-    5px 5px #000000, 6px 6px #000000;
-  -webkit-transform: translateX(-3px);
-  transform: translateX(-3px);
-  transition: 0.5s ease;
+  border-radius:50%;
+  transition: 1s ease;
 }
 
 .socials-list {
@@ -1049,4 +1055,13 @@ project-wrapper {
   color: var(--emperor-gold);
   font-family: cabin;
   font-style: italic;
+}
+
+.proj2-img {
+  background-color: var(--venus-blue);
+}
+
+.error {
+  height: 100vh;
+  justify-items: center;
 }

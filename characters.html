@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      href="assets/alt-emperorvenus-logo-star.svg"
+      type="image/svg+xml"
+    />
+    <title>About Ari Thompson</title>
+    <meta
+      name="description"
+      content="My name is Ari Thompson. I am an illustrator and character designer with a love for dabbling in branding illustrations!"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="screenshot.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d300c2ea15.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body class="work-page">
+    <main class="work-wrapper">
+      <!-- START OF NAV -->
+
+      <aside class="nav-aside">
+        <div class="branding-navigation">
+          <section>
+            <img
+              class="star"
+              src="/assets/alt-emperorvenus-logo-star.svg"
+              width="50"
+            />
+          </section>
+          <section>
+            <h1 class="brand-title">
+              <a href="work.html">ARI<br />THOMPSON</a>
+            </h1>
+            <h5 class="brand-pronounce">ah-ree • tom-pson</h5>
+          </section>
+          <section class="nav-list">
+            <ul>
+              <h4>
+                <li><a href="work.html">WORK</a></li>
+                <li>
+                  <a href="characters.html">CHARACTERS</a>
+                </li>
+                <li><a href="about.html">ABOUT</a></li>
+              </h4>
+            </ul>
+          </section>
+        </div>
+      </aside>
+
+      <!-- END OF NAV -->
+
+      <section class="portfolio">
+        <section class="404">
+          <div class="error">
+            <h5>uh oh, stinky</h5>
+            <p>nothing to see here yet, come back soon TTwTT</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script>
+      myID = document.getElementById("myID");
+
+      var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 800) {
+          myID.className = "bottomMenu show";
+        } else {
+          myID.className = "bottomMenu hide";
+        }
+      };
+
+      window.addEventListener("scroll", myScrollFunc);
+    </script>
+  </body>
+</html>
