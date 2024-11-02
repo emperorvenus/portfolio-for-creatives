@@ -375,6 +375,9 @@ a:hover {
   flex-direction: column;
   justify-content: center;
 }
+.star {
+  padding-bottom: 1rem;
+}
 
 .logo {
   width: 10%;
@@ -492,13 +495,10 @@ a:hover {
 */
 
 .about {
-  display: flex;
-  justify-content: flex-end;
-  grid-template-columns: 1fr;
+  display: grid;
   grid-gap: 3rem;
-  background: var(--background-color-about);
-  padding: 1rem;
-  flex: 3;
+  padding: 3rem;
+  align-items: center;
 }
 
 /* Global Footer
@@ -522,6 +522,17 @@ a:hover {
   justify-content: center;
 }
 
+.assg-footer-divider {
+  background-image: url(/assets/footer-wave.svg);
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
 .footer-divider-proj {
   background-image: url(/assets/footer-wave.svg);
   background-color: #000000;
@@ -537,6 +548,10 @@ a:hover {
   min-width: 100vh;
 }
 
+.assg-footer-image {
+  min-width: 100vh;
+}
+
 .global-footer {
   display: grid;
   grid-template-columns: 1fr;
@@ -546,18 +561,14 @@ a:hover {
   padding: 1rem;
 }
 
-.footer-type {
-  color: var(--footer-text);
-}
-
 .footer-item-1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  color: var(--venus-blue);
 }
 .footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+  color: #dbe9e9;
 }
 
 /* Project Page 
@@ -801,10 +812,15 @@ a:hover {
 
   .about {
     padding: 4rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .footer-divider {
+    width: 100%;
+    height: auto;
+  }
+
+  .assg-footer-divider {
     width: 100%;
     height: auto;
   }
@@ -859,7 +875,7 @@ a:hover {
   .footer-item-4 {
     grid-row: 2 / 3;
     grid-column: 1 / 4;
-    text-align: center;
+    text-align: left;
     align-self: end;
   }
 
@@ -948,6 +964,11 @@ project-wrapper {
   width: auto;
 }
 
+.assg-footer-image {
+  height: 10vh;
+  width: auto;
+}
+
 .project-image-grid {
   display: flex;
   justify-content: center;
@@ -981,10 +1002,10 @@ project-wrapper {
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin: 0;
-  padding-left: 0.5rem;
+  margin-left: -0.6rem;
+  padding-left: 0rem;
   padding-right: 0.5rem;
-  justify-content: center;
+  justify-content: left;
 }
 
 .socials-list li {
@@ -1017,4 +1038,12 @@ project-wrapper {
   max-width: 30vw;
   height: auto;
   align-self: center;
+}
+
+.about-subhead {
+  padding-top: 3rem;
+}
+
+.award-head {
+  padding-top: 3rem;
 }
