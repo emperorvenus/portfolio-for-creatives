@@ -126,7 +126,6 @@ html {
   --overlay-title-color: #000000;
   --overlay-description-color: #000000;
   --hyperlink-color: #ffffff;
-  --hyperlink-alternate-color: orangered;
   --hover-color: #ffffff;
   --visited-color: #ffffff;
   --project-title-color: #ffffff;
@@ -301,7 +300,7 @@ a:hover {
 }
 
 .colored-link {
-  color: var(--hyperlink-alternate-color);
+  color: var(--hyperlink-color);
 }
 
 .custom-navigation:hover {
