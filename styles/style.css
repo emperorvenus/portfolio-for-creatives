@@ -125,7 +125,7 @@ html {
   --overlay-color: #ec9007;
   --overlay-title-color: #000000;
   --overlay-description-color: #000000;
-  --hyperlink-color: #5200ff;
+  --hyperlink-color: #ffffff;
   --hyperlink-alternate-color: orangered;
   --hover-color: #ffffff;
   --visited-color: #ffffff;
@@ -134,10 +134,6 @@ html {
   --nav-sidebar-text-color: white;
   --heart-color: darkred;
   --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #5200ff;
-  --linear-gradient-color-1: #ff057c;
-  --linear-gradient-color-2: #8d0b93;
-  --linear-gradient-color-3: #321575;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
   --venus-blue: #dbe9e9;
   --emperor-gold: #ec9007;
@@ -192,6 +188,7 @@ h2 {
 h3 {
   font-size: 1.325rem;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 h4 {
@@ -210,7 +207,7 @@ h6 {
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.2rem;
   margin-bottom: 1rem;
 }
@@ -747,10 +744,11 @@ a:hover {
   }
 
   h3 {
-    font-size: 1.325rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
     line-height: 1.3;
     color: var(--h3-color);
+    font-weight: bold;
   }
 
   h4 {
@@ -775,7 +773,7 @@ a:hover {
 
   p {
     font-family: var(--body-typeface);
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.3;
     margin-bottom: 1rem;
   }
@@ -1046,4 +1044,9 @@ project-wrapper {
 
 .award-head {
   padding-top: 3rem;
+}
+
+.color-word {
+  color: var(--emperor-gold);
+  font-style: italic;
 }
