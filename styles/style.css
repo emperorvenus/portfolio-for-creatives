@@ -1056,6 +1056,7 @@ project-wrapper {
   .project-details {
     display: flex;
     padding-left: 2rem;
+    padding-right: 2rem;
     gap: 1rem;
   }
 
@@ -1065,7 +1066,7 @@ project-wrapper {
   }
 
   .project-secondimg-2 {
-    max-width: 40vw;
+    max-width: 100%;
     margin-top: 0rem;
   }
 
