@@ -110,7 +110,7 @@ html {
   --background-color-footer: #000000;
   --alt-background-color: #000000;
   --footer-background: #dbe9e9;
-  --background-color-holding-page: rgba(82, 0, 255, 0.6);
+  --background-color-holding-page: #000000;
   --h1-color: #ffffff;
   --h2-color: #ffffff;
   --h3-color: #ffffff;
@@ -252,11 +252,22 @@ em {
 .project-info {
   margin-top: 1rem;
   padding-right: 2rem;
+  flex: 1;
+}
+
+.bar-sketch {
+  flex: 2; /* The image section takes up 2 parts of space */
+  max-width: 100%; /* Limits the width of the image section */
+}
+
+.bar-sketch img {
+  width: 100%; /* Ensures the image fills its container */
+  height: auto; /* Maintains the aspect ratio of the image */
 }
 
 .project-info-2 {
   margin-top: 1rem;
-  padding-right: 2rem;
+  padding-right: 0rem;
   color: #494949;
 }
 
@@ -265,12 +276,14 @@ em {
   padding-top: 1rem;
 }
 
-.bar-sketch {
-  align-items: right;
-}
-
 .project-secondimg {
   align-items: right;
+  margin-top: 1rem;
+}
+
+.project-secondimg-2 {
+  align-items: right;
+  padding-top: 1.5rem;
 }
 
 .overlay-title {
@@ -581,8 +594,6 @@ a:hover {
 
 .assg-two-footer-divider {
   background-color: var(--venus-blue);
-  display: flex;
-  justify-content: end;
   max-width: 100%;
   height: auto;
 }
@@ -686,6 +697,36 @@ a:hover {
   background-color: var(--venus-blue);
 }
 
+.aetherial-characters {
+  width: 100%;
+  padding: 1rem;
+}
+
+.aetherial-bio {
+  padding-top: 2rem;
+}
+
+.aetherial-ref {
+  width: 100%; /* Adjust width to fit two columns side-by-side */
+}
+
+.grey-text {
+  color: #494949;
+}
+
+.aetherial-synopsis {
+  text-align: center;
+  max-width: 90vw;
+}
+
+.project-center-text {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* 
 
 ██   ██  ██████  ██      ██████  ██ ███    ██  ██████  
@@ -705,13 +746,6 @@ a:hover {
   width: 100%;
   min-height: 100vh;
   /* TODO: Delete the following if you do not want a grainy gradient background on index.html. Be careful not to delete the closing } */
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 1),
-      var(--background-color-holding-page)
-    ),
-    url(/assets/temp/noise.svg);
-  /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
 .holding-page-animation {
@@ -1014,12 +1048,18 @@ project-wrapper {
 
   .project-details {
     display: flex;
-    padding-left: 1rem;
+    padding-left: 2rem;
     gap: 1rem;
   }
 
   .project-secondimg {
     max-width: 50vw;
+    margin-top: 0rem;
+  }
+
+  .project-secondimg-2 {
+    max-width: 40vw;
+    margin-top: 0rem;
   }
 
   .footer-image {
@@ -1097,14 +1137,43 @@ project-wrapper {
   }
 
   .weather-series {
-    padding-right: 1rem;
+    width: 100%;
   }
 
   .project-info-2 {
-    padding-right: 0rem;
+    padding-right: 2rem;
+  }
+
+  .aetherial-characters {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .aetherial-ref {
+    text-align: left; /* Align text to the left */
+    width: 49%; /* Adjust width to fit two columns side-by-side */
+  }
+
+  .aetherial-ref img {
+    width: 100%; /* Makes image width fill container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers the area without stretching */
   }
 
   .bar-sketch {
-    max-width: 50vw;
+    flex: 2; /* The image section takes up 2 parts of space */
+    max-width: 55%; /* Limits the width of the image section */
+  }
+
+  .aetherial-synopsis {
+    max-width: 60vw;
+  }
+
+  .project-center-text {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
