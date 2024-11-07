@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link
-      rel="icon"
-      href="assets/alt-emperorvenus-logo-star.svg"
-      type="image/svg+xml"
-    />
-    <title>About Ari Thompson</title>
+    <title>Ari Thompson</title>
     <meta
       name="description"
-      content="My name is Ari Thompson. I am an illustrator and character designer with a love for dabbling in branding illustrations!"
+      content="Your favourite Vancouver-based illustrator Ari Thompson! 
+      Currently: I am on the grind."
     />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,6 +13,11 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="icon"
+      href="assets/alt-emperorvenus-logo-star.svg"
+      type="image/svg+xml"
     />
     <script
       src="https://kit.fontawesome.com/d300c2ea15.js"
@@ -66,50 +67,59 @@
       <!-- END OF NAV -->
 
       <section class="portfolio">
-        <section class="about">
-          <div class="portrait-photo">
-            <img src="/assets/gif.gif" />
+        <section class="hero">
+          <div class="hero-text">
+            <h1>
+              Forever illustrating <br /><s
+                ><span class="hero-strike">until I wither away</span></s
+              >
+            </h1>
           </div>
+          <div class="hero-animated-illustration">
+            <img
+              class="creature-gif"
+              src="/assets/creatura-ari-thompson.gif"
+              alt="Character design waving"
+            />
+          </div>
+        </section>
 
-          <div class="about-text">
-            <h2>This is <span class="color-word">Ari Thompson</span></h2>
-            <h5>Brand Illustrator/Character Designer</h5>
-            <h3 class="about-subhead">Let me tell you about myself...</h3>
-            <p>
-              My name is Ari Thompson. I am an illustrator focusing on creating
-              engaging characters for games and illustrations that make brands
-              stand out. A still healthy amount of my spare time is spent plane
-              spotting — I love the challenge of identifying an aircraft on the
-              fly with only a fleeting chance to snap the perfect photo. It’s a
-              welcome balance to the attention to detail and continuous
-              refinement needed for illustration. Caring for my really large
-              cat, Skittles, and illustrating my own little universe of
-              characters helps keeps me grounded.
-            </p>
-            <p>
-              I am a graduate of the Capilano University IDEA School of Design
-              and am now based in Metro Vancouver, BC. I am available to take on
-              a full time position or freelance work either remote or on-site.
-            </p>
-            <p>Come say hello, I promise I do not bite.</p>
-            <h3 class="award-head">Awards & Recognition 💫</h3>
-            <a href="https://capic.org/rodeo-16-gallery/">
-              <p>Capid Rodeo 16 Top 10</p>
-            </a>
-            <h3 class="award-head">Reach Out to Me :-)</h3>
-            <p>hello@arithompson.ca</p>
+        <section class="project-image-grid">
+          <div class="image-grid">
+            <a href="serene-bartender.html" class="project-image-link"
+              ><img
+                class="project-image"
+                src="assets/project-images/ari-thompson-serene-bartender-illustration-owl-artwork.jpg"
+                alt="Serene Bartender Illustration with Owl Artwork"
+            /></a>
 
-            <img src="assets/garbage/bestvieweddesktop.gif" />
-            <img src="assets/garbage/graphicdesign.png" />
-            <img src="assets/garbage/css2.png" />
-            <img src="assets/garbage/queer.png" />
+            <a href="weather-app-illustrations.html" class="project-image-link">
+              <img
+                class="project-image"
+                src="assets/project-images/weather-app-illustration-ui.jpg"
+                alt="Weather App Illustration featuring a Lighthouse"
+            /></a>
+            <a href="hero-character-design.html" class="project-image-link">
+              <img
+                class="project-image"
+                src="assets/project-images/screen-ari-thompson-character-design-illustration-hero-pose.jpg"
+                alt="Character Design Illustration in Hero Pose"
+            /></a>
+            <a href="aetherial-game.html" class="project-image-link">
+              <img
+                class="project-image"
+                src="assets/project-images/aetherial-game-character-design-wip.jpg"
+                alt="Aetherial Game Character Design"
+            /></a>
           </div>
         </section>
 
         <!-- FOOTER START -->
-        <div class="assg-footer-divider">
+
+        <div class="footer-divider">
           <img src="assets/footer-wave.svg" alt="Your Photo" />
         </div>
+
         <ul class="global-footer">
           <li class="footer-item-1">
             <a href="404.html"><h3 class="footer-type">Who am I ?</h3></a>
@@ -127,44 +137,32 @@
                 <a href="https://www.instagram.com/emperorvenus/">
                   <img
                     src="assets/branding-images/portfolio-social-scons-hover-insta.svg"
+                    alt="Instagram"
                 /></a>
               </li>
               <li class="social-item">
                 <a href="https://www.linkedin.com/in/emperorvenus/"
                   ><img
                     src="assets/branding-images/portfolio-social-scons-hover-linkedin.svg"
+                    alt="LinkedIn"
                 /></a>
               </li>
               <li class="social-item">
                 <a href="https://www.behance.net/emperorvenus">
                   <img
                     src="assets/branding-images/portfolio-social-scons-hover-behance.svg"
+                    alt="Behance"
                 /></a>
               </li>
             </ul>
           </li>
           <li class="footer-item-4">
             <p><a href="#top">Smooth scroll to the top</a></p>
-            <p class="fineprint">Copyright &copy; 2020-2024 Ari Thompson</p>
+            <p class="fineprint">Copyright &copy; 2024-2025 Ari Thompson</p>
           </li>
         </ul>
         <!-- FOOTER END -->
       </section>
     </main>
-
-    <script>
-      myID = document.getElementById("myID");
-
-      var myScrollFunc = function () {
-        var y = window.scrollY;
-        if (y >= 800) {
-          myID.className = "bottomMenu show";
-        } else {
-          myID.className = "bottomMenu hide";
-        }
-      };
-
-      window.addEventListener("scroll", myScrollFunc);
-    </script>
   </body>
 </html>

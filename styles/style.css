@@ -58,7 +58,6 @@ Imported stylesheets. Remove the ones you do not want to use.
 
 @import url("experiments.css");
 @import url("style-guide.css");
-@import url("scroll-to-top.css");
 
 /*
 
@@ -232,6 +231,10 @@ em {
   margin-top: 1rem;
 }
 
+.nav-item {
+  margin-top: -1rem;
+}
+
 .project-title {
   font-size: 3.725rem;
   font-family: var(--heading-typeface);
@@ -240,6 +243,8 @@ em {
 }
 
 .project-title-2 {
+  font-size: 3.725rem;
+  font-family: var(--heading-typeface);
   color: #494949;
   margin-bottom: 1rem;
 }
@@ -255,9 +260,12 @@ em {
   color: #494949;
 }
 
+.bar-sketch {
+  align-items: right;
+}
+
 .project-secondimg {
   align-items: right;
-  max-width: 50vw;
 }
 
 .overlay-title {
@@ -391,7 +399,8 @@ a:hover {
 }
 
 .star {
-  padding-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  margin-left: -0.3rem;
 }
 
 .logo {
@@ -433,6 +442,21 @@ a:hover {
   padding: 1rem;
 }
 
+.hero-text {
+  width: 50%;
+  align-self: center;
+}
+.color-word {
+  color: var(--emperor-gold);
+  font-style: italic;
+}
+
+.hero-strike {
+  color: var(--emperor-gold);
+  font-family: cabin;
+  font-style: italic;
+}
+
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
@@ -469,8 +493,10 @@ a:hover {
 .image-grid {
   display: flex;
   flex-direction: column;
-  margin-right: 0rem;
-  margin-left: 0rem;
+  gap: 1rem;
+  margin-left: 1rem;
+  margin-right: 1em;
+  padding-top: 2rem;
 }
 .project-image-link {
   margin-bottom: 1rem;
@@ -534,7 +560,6 @@ a:hover {
 
 .footer-divider {
   background-color: var(--venus-blue);
-  padding-top: 20vh;
   display: flex;
   justify-content: end;
   max-width: 100%;
@@ -543,7 +568,14 @@ a:hover {
 
 .assg-footer-divider {
   background-color: #000;
-  padding-top: 20vh;
+  display: flex;
+  justify-content: end;
+  max-width: 100%;
+  height: auto;
+}
+
+.assg-two-footer-divider {
+  background-color: var(--venus-blue);
   display: flex;
   justify-content: end;
   max-width: 100%;
@@ -566,11 +598,25 @@ a:hover {
 .footer-item-1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  padding-top: 3rem;
 }
 .footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
   color: #fee4bd;
+}
+
+.socials-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-right: -1rem;
+}
+
+.socials-list img {
+  max-width: 100%;
+  height: 5vh;
+  display: block;
 }
 
 /* Project Page 
@@ -604,6 +650,8 @@ a:hover {
 .project-image {
   width: 100%; /* Full width of the grid cell */
   height: auto; /* Maintain aspect ratio */
+  border-radius: 30px;
+  transition: 1s ease;
 }
 
 .text-section {
@@ -616,6 +664,10 @@ a:hover {
   padding: 3rem;
 }
 
+.weather-series {
+  padding-right: 1rem;
+}
+
 /* Main Project Image Area */
 
 .project-details {
@@ -623,6 +675,10 @@ a:hover {
   padding: 1rem;
 
   /* TODO: Delete background-image and the three linear gradient colors to remove the gradient background on the project page. Be careful not to delete the closing } */
+}
+
+.proj2-img {
+  background-color: var(--venus-blue);
 }
 
 /* 
@@ -798,14 +854,14 @@ a:hover {
   }
 
   h6 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     color: var(--h6-color);
   }
 
   p {
     font-family: var(--body-typeface);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.3;
     margin-bottom: 1rem;
   }
@@ -854,6 +910,7 @@ a:hover {
   }
 
   .assg-footer-divider {
+    padding-top: 20vh;
     width: 100%;
     height: auto;
   }
@@ -923,11 +980,6 @@ project-wrapper {
     width: 100%;
   }
 
-  /* Main Project Image Area on Large Devices */
-  .project-details {
-    width: 100%;
-  }
-
   .project-navigation {
     justify-content: flex-start;
   }
@@ -958,13 +1010,11 @@ project-wrapper {
 
   .project-details {
     display: flex;
-    justify-content: space-between;
     padding-left: 3rem;
   }
 
   .project-secondimg {
-    flex-grow: 2;
-    flex-shrink: 0.5;
+    max-width: 50vw;
   }
 
   .footer-image {
@@ -978,8 +1028,6 @@ project-wrapper {
   }
 
   .image-grid {
-    display: flex;
-    flex-direction: column;
     gap: 3rem;
     margin-left: 3rem;
     margin-right: 3rem;
@@ -987,32 +1035,12 @@ project-wrapper {
   }
 
   .project-image {
-    width: 100%; /* Full width of the grid cell */
-    height: auto; /* Maintain aspect ratio */
     border-radius: 30px;
-    transition: 1s ease;
   }
 
   .project-image:hover {
     border-radius: 50%;
     transition: 1s ease;
-  }
-
-  .socials-list {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin-right: -1rem;
-  }
-
-  .socials-list li {
-    margin: 8px;
-  }
-
-  .socials-list img {
-    max-width: 100%;
-    height: 5vh;
-    display: block;
   }
 
   .hero {
@@ -1027,10 +1055,6 @@ project-wrapper {
     width: 35vw;
     position: relative;
   }
-  .hero-text {
-    width: 60%;
-    align-self: center;
-  }
 
   .hero-animated-illustration {
     width: 40%;
@@ -1042,21 +1066,6 @@ project-wrapper {
 
   .award-head {
     padding-top: 1.5rem;
-  }
-
-  .color-word {
-    color: var(--emperor-gold);
-    font-style: italic;
-  }
-
-  .hero-strike {
-    color: var(--emperor-gold);
-    font-family: cabin;
-    font-style: italic;
-  }
-
-  .proj2-img {
-    background-color: var(--venus-blue);
   }
 
   .error {
@@ -1076,5 +1085,9 @@ project-wrapper {
     object-fit: contain;
     max-width: 100%;
     height: auto;
+  }
+
+  .footer-item-1 {
+    padding-top: 0rem;
   }
 }
