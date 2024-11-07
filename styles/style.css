@@ -750,6 +750,8 @@ a:hover {
 
 .holding-page-animation {
   margin-bottom: 1rem;
+  width: 100%;
+  place-self: center;
 }
 
 .holding-page-title {
@@ -856,6 +858,11 @@ a:hover {
 
   .holding-page-title {
     font-size: 2rem;
+  }
+
+  .holding-page-animation {
+    width: 70%;
+    margin-top: 3rem;
   }
 
   h1 {
