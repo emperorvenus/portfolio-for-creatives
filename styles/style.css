@@ -260,6 +260,11 @@ em {
   color: #494949;
 }
 
+.recognition {
+  color: #494949;
+  padding-top: 1rem;
+}
+
 .bar-sketch {
   align-items: right;
 }
@@ -352,7 +357,7 @@ a:hover {
 }
 
 .project-description {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 /* Hero 
@@ -665,7 +670,7 @@ a:hover {
 }
 
 .weather-series {
-  padding-right: 1rem;
+  padding-right: 0rem;
 }
 
 /* Main Project Image Area */
@@ -910,7 +915,6 @@ a:hover {
   }
 
   .assg-footer-divider {
-    padding-top: 20vh;
     width: 100%;
     height: auto;
   }
@@ -1010,7 +1014,8 @@ project-wrapper {
 
   .project-details {
     display: flex;
-    padding-left: 3rem;
+    padding-left: 1rem;
+    gap: 1rem;
   }
 
   .project-secondimg {
@@ -1089,5 +1094,17 @@ project-wrapper {
 
   .footer-item-1 {
     padding-top: 0rem;
+  }
+
+  .weather-series {
+    padding-right: 1rem;
+  }
+
+  .project-info-2 {
+    padding-right: 0rem;
+  }
+
+  .bar-sketch {
+    max-width: 50vw;
   }
 }
