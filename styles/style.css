@@ -281,9 +281,9 @@ em {
   margin-top: 1rem;
 }
 
-.project-secondimg-2 {
-  align-items: right;
-  padding-top: 1.5rem;
+.project-secondimg-two {
+  width: 100%;
+  padding: 1rem;
 }
 
 .overlay-title {
@@ -406,6 +406,7 @@ a:hover {
   min-height: 20vh;
   padding: 3rem;
   align-items: center;
+  flex-direction: column;
 }
 
 .branding-navigation {
@@ -461,7 +462,7 @@ a:hover {
 }
 
 .hero-text {
-  width: 40%;
+  width: 70%;
   align-self: center;
 }
 .color-word {
@@ -473,6 +474,10 @@ a:hover {
   color: var(--emperor-gold);
   font-family: cabin;
   font-style: italic;
+}
+
+.hero-animated-illustration {
+  width: 60vw;
 }
 
 /* Work Page Layout
@@ -684,6 +689,10 @@ a:hover {
   padding-right: 0rem;
 }
 
+.aetherial-values {
+  padding: 1rem;
+  background-color: var(--venus-blue);
+}
 /* Main Project Image Area */
 
 .project-details {
@@ -1061,11 +1070,11 @@ project-wrapper {
   }
 
   .project-secondimg {
-    max-width: 50vw;
+    min-width: 50vw;
     margin-top: 0rem;
   }
 
-  .project-secondimg-2 {
+  .project-secondimg-two {
     max-width: 100%;
     margin-top: 0rem;
   }
@@ -1101,6 +1110,7 @@ project-wrapper {
     padding-right: 4rem;
     padding-bottom: 8rem;
     padding-left: 4rem;
+    flex-direction: row;
   }
 
   .creature-gif {
@@ -1183,5 +1193,8 @@ project-wrapper {
     padding-bottom: 4rem;
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+  .hero-text {
+    width: 40%;
   }
 }
