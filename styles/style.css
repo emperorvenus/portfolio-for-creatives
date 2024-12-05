@@ -693,6 +693,14 @@ a:hover {
   padding: 1rem;
   background-color: var(--venus-blue);
 }
+
+.tiberius-ref {
+  padding-bottom: 1rem;
+}
+
+.flit-ref {
+  padding-bottom: 1rem;
+}
 /* Main Project Image Area */
 
 .project-details {
@@ -724,8 +732,12 @@ a:hover {
 }
 
 .aetherial-synopsis {
-  text-align: center;
   max-width: 90vw;
+  padding: 2rem;
+}
+
+.aetherial-char-desc {
+  margin-right: 3rem;
 }
 
 .project-center-text {
@@ -733,7 +745,7 @@ a:hover {
   padding-bottom: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: left;
 }
 
 /* 
@@ -1185,7 +1197,7 @@ project-wrapper {
   }
 
   .aetherial-synopsis {
-    max-width: 60vw;
+    max-width: 40vw;
   }
 
   .project-center-text {
@@ -1196,5 +1208,9 @@ project-wrapper {
   }
   .hero-text {
     width: 40%;
+  }
+
+  .aetherial-char-desc {
+    margin-right: 5rem;
   }
 }
